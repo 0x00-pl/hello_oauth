@@ -1,0 +1,44 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <title>Input graphql query</title>
+        <meta name="description" content="The HTML5 Herald">
+        <meta name="author" content="SitePoint">
+
+        <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+        <!--[if lt IE 9]>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+        <![endif]-->
+        <style>
+         .green-btn {
+             background-color: lightgreen;
+         }
+        </style>
+    </head>
+
+    <body>
+        <div>query: </div>
+        <textarea cols="30" id="q" name="q" rows="10">
+{
+  viewer {
+    login
+    name
+  }
+}
+        </textarea>
+        <div class="green-btn" onClick="send_query()">
+            send
+        </div>
+        <script type="text/javascript">
+         function send_query () {
+             var q = document.getElementById('q').innerHTML
+             console.log(q)
+             open(window.location+'&q='+q)
+         }
+        </script>
+    </body>
+</html>

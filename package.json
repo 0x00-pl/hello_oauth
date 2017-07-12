@@ -1,0 +1,24 @@
+{
+  "name": "hello_oauth",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0x00-pl/hello_oauth.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/0x00-pl/hello_oauth/issues"
+  },
+  "homepage": "https://github.com/0x00-pl/hello_oauth#readme",
+  "dependencies": {
+    "express": "^4.15.3",
+    "node-fetch": "^1.7.1"
+  }
+}
